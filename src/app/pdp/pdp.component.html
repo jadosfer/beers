@@ -42,8 +42,10 @@
 
         <div class="row my-3">
           <div class="col-4" *ngFor="let prod of product.skus">
-            <button type="button" class="btn brand-size p-0">
-              <h5 class="card-title text-center small-title my-2 mx-3">{{prod.name.replace(' Cans', '')}}</h5>
+            <button type="button" class="btn brand-size p-0" (click)="selectSize(prod.code)" [ngClass]="{ 'active': activeButton == prod.code }">
+              <h5 class="card-title text-center small-title my-2 mx-3" [ngClass]="{ 'active': activeButton == prod.code }">
+                {{prod.name.replace(' Cans', '')}}
+              </h5>
             </button>
           </div>
         </div>

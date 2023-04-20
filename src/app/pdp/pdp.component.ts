@@ -28,6 +28,7 @@ export class PdpComponent implements OnInit, OnDestroy {
   brand: string = "";
   id: number = 0;
   subscriptions: Subscription[] = [];
+  activeButton: string = "";
 
   constructor(private route: ActivatedRoute, private stockPriceService: StockPriceService) { }
 
@@ -41,6 +42,7 @@ export class PdpComponent implements OnInit, OnDestroy {
       this.id = params['param'].split("-")[0];
       this.brand = params['param'].split("-")[1];
       this.product = this.productsList.find(p => p.id == this.id && p.brand.toLowerCase() == this.brand.toLowerCase());
+      this.activeButton = this.product.skus[0].code;
       this.stockPriceService.getStockPrice(this.product.skus[0].code).subscribe((product: Product) => {
         this.productToShow = product;
       })
@@ -66,6 +68,13 @@ export class PdpComponent implements OnInit, OnDestroy {
       });
       this.subscriptions.push(subscription);
     });
+  }
+
+  selectSize(code: string) {
+    this.stockPriceService.getStockPrice(code).subscribe((product: Product) => {
+      this.productToShow = product;
+    })
+    this.activeButton = code;
   }
 
   objectKeys(obj: any): string[] {
