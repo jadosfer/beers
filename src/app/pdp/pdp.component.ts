@@ -17,15 +17,21 @@ export class PdpComponent implements OnInit {
   product: any;
   stock: number[] = [];
   price: number[] = [];
+  brand: string = "";
+  id: number = 0;
 
   constructor(private route: ActivatedRoute, private stockPriceService: StockPriceService) { }
 
   ngOnInit(): void {
+    this.stockPriceService.getPrice().subscribe((data: any) => {
+      console.log('data derecho', data);
+    });
+
     this.productsList = products;
     this.route.params.subscribe(params => {
-      const id = params['param'].split("-")[0];
-      const brand = params['param'].split("-")[1];
-      this.product = this.productsList.find(p => p.id == id && p.brand.toLowerCase() == brand.toLowerCase());
+      this.id = params['param'].split("-")[0];
+      this.brand = params['param'].split("-")[1];
+      this.product = this.productsList.find(p => p.id == this.id && p.brand.toLowerCase() == this.brand.toLowerCase());
       this.getAllStockPriceBySkuCode();
 
       setInterval(() => {
@@ -37,13 +43,12 @@ export class PdpComponent implements OnInit {
 
   getAllStockPriceBySkuCode() {
     this.product?.skus.forEach((p: any) => {
-      this.stockPriceService.getStockPrice().subscribe((data: any) => {
-        let prod = data[p.code];
+      this.stockPriceService.getStockPrice(p.code).subscribe((data: any) => {
         this.productsToShow.push({
           "code": p.code,
           "name": p.name,
-          "stock" : prod.stock,
-          "price": prod.price / 100 // convert from cents to dollars
+          "stock" : data.stock,
+          "price": data.price / 100 // convert from cents to dollars
         });
       });
     })

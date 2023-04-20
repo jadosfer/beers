@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import products from '../../data/products';
+//import image from './chop.jpg';
 
 @Component({
   selector: 'app-plp',

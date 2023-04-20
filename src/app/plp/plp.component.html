@@ -1,6 +1,7 @@
 <div *ngFor="let product of productsList">
   <a [routerLink]="['/', product.id + '-' + product.brand]">
     <h2>{{ product.brand }}</h2>
-    <img [src]="product.image" alt="{{ product.brand }}">
+    <img class="imagen" src="../../assets/{{product.image}}" alt="{{ product.image }}">
   </a>
 </div>
+
