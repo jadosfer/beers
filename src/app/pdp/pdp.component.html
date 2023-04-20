@@ -1,0 +1,7 @@
+<h1>Product Details</h1>
+<ul *ngFor="let product of productsToShow">
+  <li *ngFor="let property of objectKeys(product)">
+    {{ property }}: {{ product[property] }}
+  </li>
+  <br>
+</ul>
