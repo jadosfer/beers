@@ -17,6 +17,11 @@ export class PdpComponent implements OnInit, OnDestroy {
   productBrand: string = "";
   productsList: BrandGroup[] = [];
   productsToShow: any[] =  [];
+  productToShow: Product = {
+    code: '',
+    stock: 0,
+    price: 0
+  };
   product: any;
   stock: number[] = [];
   price: number[] = [];
@@ -36,6 +41,10 @@ export class PdpComponent implements OnInit, OnDestroy {
       this.id = params['param'].split("-")[0];
       this.brand = params['param'].split("-")[1];
       this.product = this.productsList.find(p => p.id == this.id && p.brand.toLowerCase() == this.brand.toLowerCase());
+      this.stockPriceService.getStockPrice(this.product.skus[0].code).subscribe((product: Product) => {
+        this.productToShow = product;
+      })
+      this.formatChar();
       this.getAllStockPriceBySkuCode();
 
       setInterval(() => {
@@ -61,6 +70,11 @@ export class PdpComponent implements OnInit, OnDestroy {
 
   objectKeys(obj: any): string[] {
     return Object.keys(obj);
+  }
+
+  formatChar() {
+    this.product.information = this.product.information.replace(/\(\d+\)/g, '').replace(/#\d+\s+/g, '')
+    this.product.information = this.product.information.charAt(0).toUpperCase() + this.product.information.slice(1)
   }
 
   ngOnDestroy() {

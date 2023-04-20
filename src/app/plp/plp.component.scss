@@ -1,3 +1,51 @@
-.imagen {
-  height: 200px;
+.rounded-circle {
+  height: 50px;
 }
+
+.greetings {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 20.83px;
+  opacity: 0.6;
+}
+
+.greetings-2 {
+  font-size: 24px;
+  line-height: 31.25px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.category {
+  font-size: 18px;
+  line-height: 23.44px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+input::placeholder {
+  font-family: DM Sans;
+  font-size: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.btn-warning {
+  background-color: #FF9F24;
+}
+
+.beers {
+  width: 80px;
+}
+
+.card {
+  border-radius: 20px;
+  border:none;
+ }
+
+ .card-title {
+  font-size: 16px;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 16px;
+ }
+
+ a {
+  text-decoration:none
+ }

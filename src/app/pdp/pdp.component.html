@@ -1,8 +1,58 @@
-<h1>Product Details</h1>
-<h2>{{brand}}</h2>
-<ul *ngFor="let product of productsToShow">
-  <li *ngFor="let property of objectKeys(product)">
-    {{ property }}: {{ product[property] }}
-  </li>
-  <br>
-</ul>
+<div class="btn-group d-flex justify-content-between my-3" role="group" aria-label="Drink categories">
+  <div class="col-3 text-center">
+    <a [routerLink]="['/']">
+      <i class="bi bi-arrow-left text-secondary fs-4"></i>
+    </a>
+  </div>
+
+  <div class="col-3 text-center">
+    <h1 class="mt-2 detail">Detail</h1>
+  </div>
+
+  <div class="col-3 text-center">
+    <a href="#">
+      <i class="bi bi-three-dots text-secondary fs-4"></i>
+    </a>
+  </div>
+</div>
+
+<img src="../../assets/{{product.image}}" class="mx-auto d-block beers my-3" alt="image not available">
+
+<div class="row justify-content-center">
+  <div class="col-md-8">
+    <div class="card main-card">
+      <div class="card-body ms-2">
+        <div class="row">
+          <div class="col-9">
+            <div class="row">
+              <h1 class="fw-bold greetings2">{{product.brand}}</h1>
+            </div>
+            <div class="row">
+              <h5 class="origin">Origin: {{product.origin}} | Stock: {{productToShow.stock}}</h5>
+            </div>
+          </div>
+          <div class="col-3">
+            <h5 style="color: #FF9F24;"><h5>${{productToShow.price/100}}</h5></h5>
+          </div>
+        </div>
+
+        <h1 class="card-title fw-bold mt-3">Description</h1>
+        <p class="card-text">{{product.information | slice:0:200}}<span *ngIf="product.information.length > 200"><b>... <a href="#">Read more</a></b></span></p>
+        <h1 class="card-title fw-bold mt-3">Size</h1>
+
+        <div class="row my-3">
+          <div class="col-4" *ngFor="let prod of product.skus">
+            <button type="button" class="btn brand-size p-0">
+              <h5 class="card-title text-center small-title my-2 mx-3">{{prod.name.replace(' Cans', '')}}</h5>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="foot card-footer ms-2 d-flex justify-content-between align-items-stretch">
+        <button type="button" class="btn rounded-5 foot-icon"><i class="bi bi-bag-dash text-warning fs-3"></i></button>
+        <button type="button" class="btn warning text-white rounded-5 w-75">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
