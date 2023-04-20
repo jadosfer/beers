@@ -13,15 +13,8 @@ export class InMemoryDataService implements InMemoryDbService {
   }
 
   createDb() {
-    // const stockPrice = [
-    //   { code: 10167, stock: 141, price: 3518 },
-    //   { code: 10041, stock: 141, price: 3518 },
-    //   { code: 35681, stock: 141, price: 3518 }
-    // ];
-
     const stockPrice = this.convertStockPrice();
-    console.log('stockPrice2 ', stockPrice);
-
+    
     return { stockPrice };
   }
 

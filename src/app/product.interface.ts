@@ -1,5 +1,5 @@
 export interface Product {
-  code: number;
+  code: string;
   stock: number;
   price: number;
 }
