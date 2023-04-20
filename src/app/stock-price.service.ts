@@ -14,18 +14,7 @@ export class StockPriceService {
     this.stockPrice = stockPrice;
   }
 
-  // getStockPriceBySkuCode(code: number): Observable<any> {
-  //   return of(this.stockPrice[code]);
-  // }
-
-  getPrices() {
-    return this.http.get<any>(this.baseUrl)
-  }
-
-  getPricesById(id: number) {
-    return this.http.get(`${this.baseUrl}/${id}`);
-  }
-  getStockPriceBySkuCode(code: number) {
-    return this.http.get('/api/stockprice/' + code);
+  getStockPrice() {
+    return this.http.get(`${this.baseUrl}`);
   }
 }

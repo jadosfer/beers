@@ -21,15 +21,11 @@ export class PdpComponent implements OnInit {
   constructor(private route: ActivatedRoute, private stockPriceService: StockPriceService) { }
 
   ngOnInit(): void {
-    this.stockPriceService.getPrices().subscribe(data => {
-      console.log('data: ', data);
-    })
     this.productsList = products;
     this.route.params.subscribe(params => {
       const id = params['param'].split("-")[0];
       const brand = params['param'].split("-")[1];
       this.product = this.productsList.find(p => p.id == id && p.brand.toLowerCase() == brand.toLowerCase());
-
       this.getAllStockPriceBySkuCode();
 
       setInterval(() => {
@@ -41,12 +37,13 @@ export class PdpComponent implements OnInit {
 
   getAllStockPriceBySkuCode() {
     this.product?.skus.forEach((p: any) => {
-      this.stockPriceService.getStockPriceBySkuCode(p.code).subscribe((data: any) => {
+      this.stockPriceService.getStockPrice().subscribe((data: any) => {
+        let prod = data[p.code];
         this.productsToShow.push({
           "code": p.code,
           "name": p.name,
-          "stock" : data.stock,
-          "price": data.price / 100 // convert from cents to dollars
+          "stock" : prod.stock,
+          "price": prod.price / 100 // convert from cents to dollars
         });
       });
     })

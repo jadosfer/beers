@@ -6,24 +6,50 @@ import stockPrice from '../data/stock-price';
   providedIn: 'root',
 })
 export class InMemoryDataService implements InMemoryDbService {
-  stockPrice: any = {};
+  // stockPrice: any = {};
+
+  stockPrice: any = {
+    10167: {
+      stock: 130,
+      price: 2865,
+    },
+    10166: {
+      stock: 456,
+      price: 2640,
+    },
+  };
 
   constructor() {
     this.stockPrice = stockPrice;
   }
 
   createDb() {
-    debugger
-    // const stockPrice = this.stockPrice;
-    // console.log('stockPrice ', stockPrice);
-    // return { stockPrice }
+    //const stockPrice = [this.stockPrice];
 
-    const stockPrice = [
-      { id: 1, skuCode: 'ABC123', price: 10.99 },
-      { id: 2, skuCode: 'DEF456', price: 19.99 },
-      { id: 3, skuCode: 'GHI789', price: 8.99 }
-    ];
-    return { stockPrice };
+
+    // const stockPrice = [
+    //   { id: 1, skuCode: 'ABC123', price: 10.99 },
+    //   { id: 2, skuCode: 'DEF456', price: 19.99 },
+    //   { id: 3, skuCode: 'GHI789', price: 8.99 }
+    // ];
+    // return { stockPrice };
+
+
+
+    // const stockPrice = {
+    //   10167: {
+    //       stock: 130,
+    //       price: 2865,
+    //   },
+    //   10166: {
+    //       stock: 456,
+    //       price: 2640,
+    //   },}
+
+      // return { stockPrice }
+
+      const stockPrice = this.stockPrice;
+      return { stockPrice };
 
     // return {
     //   stockPrice,
