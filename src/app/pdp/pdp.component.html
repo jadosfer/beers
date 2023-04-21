@@ -38,7 +38,7 @@
   <div class="col-4" *ngFor="let prod of product.skus">
     <button type="button" class="btn brand-size p-0" (click)="selectSize(prod.code)" [ngClass]="{ 'active': activeButton == prod.code }">
       <h1 class="card-title text-center small-title mt-1 h1-7" [ngClass]="{ 'active': activeButton == prod.code }">
-        {{ prod.name | slice:0:12 }}<span *ngIf="prod.name.length > 12"><b>...</b></span>
+        {{ prod.name | slice:0:10 }}<span *ngIf="prod.name.length > 10"><b>...</b></span>
         <!-- {{ prod.name.replace(' Cans', '') }} -->
         <!-- {{ prod.name}} -->
       </h1>
