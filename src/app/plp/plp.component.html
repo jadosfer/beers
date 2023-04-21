@@ -1,37 +1,73 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <h1 class="d-none d-md-block ms-2">E-Commerce Aplication</h1>
-    <a class="navbar-brand ms-auto" href="#">
-      <img src="../../assets/person.jpg" alt="Foto de perfil" class="rounded-circle">
-    </a>
-  </div>
-</nav>
+<div class="img1">
+  <img src="../../assets/person.jpg" alt="image not available" class="rounded-circle">
+</div>
 
-<h1 class="fw-normal greetings ms-4 mt-3 ">Hi Mr. Michael,</h1>
-<h1 class="fw-bold greetings-2 ms-4">Welcome Back!</h1>
+<button class="btn btn-primary list"><i class="bi bi-list"></i></button>
 
-<div class="d-flex justify-content-center align-items-center my-4">
-  <div class="input-group input-group-sm w-100 mx-5">
-    <span class="input-group-text bg-light border-0 rounded-start">
-      <i class="bi bi-search text-muted fs-3 ms-1"></i>
-    </span>
-    <input type="text" class="form-control form-control-sm border-0 rounded-end py-2 pb-3 px-3 fs-4" placeholder="Search burger, pizza, drink or etc...">
+<!-- <h1 class="d-none d-md-block">E-Commerce Aplication</h1> -->
+
+<h1 class="greetings">Hi Mr. Michael,</h1>
+<h1 class="greetings-2">Welcome Back!</h1>
+
+<div class="card card-search">
+  <div class="card-body">
   </div>
 </div>
 
-<div class="row">
-  <div class="col">
-    <h1 class="fw-bold category ms-4">Drink Category</h1>
+<i class="bi bi-search"></i>
+<input type="text" class="my-input" placeholder="Search burger, pizza, drink or etc...">
+
+<h1 class="category">Drink Category</h1>
+<h1 class="see-all">See All</h1>
+
+<div class="card card-1">
+  <div class="card-body">
   </div>
-  <div class="col d-flex justify-content-end me-5">
-    <h1 class="fw-normal greetings ms-md-auto">See All</h1>
+</div>
+<div class="card card-2">
+  <div class="card-body">
+  </div>
+</div>
+<div class="card card-3">
+  <div class="card-body">
   </div>
 </div>
 
-<div class="row my-3 ms-4">
+<h1 class="all">All</h1>
+<h1 class="beer">Beer</h1>
+<h1 class="wine">Wine</h1>
+
+<div class="img2">
+  <img src="../../assets/Beer.png" alt="image not available">
+</div>
+<div class="img3">
+  <img src="../../assets/Wine-glass.png" alt="image not available">
+</div>
+
+<h1 class="popu">Populer</h1>
+<h1 class="see-all2">See All</h1>
+
+<div class="row row-1">
+  <div class="col-6" *ngFor="let product of productsList">
+    <div class="card card-4 mb-3" [routerLink]="['/', product.id + '-' + product.brand]">
+      <div class="card-body">
+        <a [routerLink]="['/', product.id + '-' + product.brand]">
+          <h1 class="card-title-1 text-center">{{ product.brand }}</h1>
+          <div class="text-center">
+            <img src="../../assets/{{product.image}}" class="beers" alt="image not available">
+          </div>
+        </a>
+      </div>
+      <button class="card-button">+</button>
+      <div class="card-foot">${{+product.price/100}}</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ----------------------------------------------------------- -->
+
+<!-- <div class="row">
   <div class="col-4 col-md-2  p-0">
     <button type="button" class="btn w-75 text-dark rounded-5">
       All
@@ -52,17 +88,17 @@
 </div>
 
 <div>
-  <h1 class="fw-bold category ms-4 my-3">Populer</h1>
+  <h1 class="fw-bold category">Populer</h1>
 </div>
 
-<div class="row m-2">
-  <div class="col my-1" *ngFor="let product of productsList">
+<div class="row">
+  <div class="col" *ngFor="let product of productsList">
     <div class="card" [routerLink]="['/', product.id + '-' + product.brand]">
       <div class="card-body">
         <a [routerLink]="['/', product.id + '-' + product.brand]">
           <h1 class="card-title text-center">{{ product.brand }}</h1>
           <div class="text-center">
-            <img src="../../assets/{{product.image}}" class="beers my-1" alt="image not available">
+            <img src="../../assets/{{product.image}}" class="beers" alt="image not available">
           </div>
         </a>
       </div>
@@ -96,4 +132,4 @@
     </div>
   </div>
 </footer>
-
+ -->

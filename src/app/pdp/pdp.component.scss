@@ -1,29 +1,174 @@
-.beers {
-  height: 200px;
+.bi-arrow-left {
+  position: absolute;
+  left: 33px;
+  top: 41px;
+  color: #323232;
 }
 
-.detail {
+.bi-three-dots {
+  position: absolute;
+  left: 319px;
+  top: 42px;
+  background: #FFFFFF;
+}
+
+.bi-bag-dash {
+  position: absolute;
+  background: #FFFFFF;
+  left: 41px;
+  top: 732px;
+}
+
+.card-image {
+  position: relative;
+  width: 375px;
+  height: 350px;
+  left: -9px;
+  top: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: none;
+}
+
+.card-1 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 24px;
+  top: 40px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  border: none;
+}
+
+.card-2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 311px;
+  top: 40px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  border: none;
+}
+
+.card-3 {
+  position: absolute;
+  width: 375px;
+  height: 801px;
+  left: -9px;
+  top: 334px;
+  background: #FFFFFF;
+  border-radius: 48px 48px 0px 0px;
+  border: none;
+}
+
+.card-4 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  left: 26px;
+  top: 723px;
+  border: 0.8px solid #FF9F24;
+  border-radius: 12px;
+}
+
+.card-5 {
+  position: absolute;
+  width: 247px;
+  height: 54px;
+  left: 104px;
+  top: 723px;
+  background: #FF9F24;
+  border-radius: 12px;
+}
+
+.h1-1 {
+  position: absolute;
+  width: 51px;
+  height: 23px;
+  left: 162px;
+  top: 47px;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 23.44px;
+  line-height: 23px;
   color: #323232;
 }
 
-a, b {
-  color:#FF9F24;
+.h1-2 {
+  position: absolute;
+  width: 190px;
+  height: 31px;
+  left: 24px;
+  top: 379px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #0F0D23;
 }
 
-.warning {
-  background-color: #FF9F24;
+.h1-3 {
+  position: absolute;
+  width: 177px;
+  height: 18px;
+  left: 24px;
+  top: 414px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #969696;
 }
 
-// .btn-warning {
-//   background-color: #FF9F24;
-// }
+.h1-4 {
+  position: absolute;
+  width: 81px;
+  height: 31px;
+  left: 268px;
+  top: 379px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #FF9F24;
+}
 
-.origin {
+.h1-5 {
+  position: absolute;
+  width: 91px;
+  height: 21px;
+  left: 24px;
+  top: 461px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #323232;
+}
+
+.h1-6 {
+  position: absolute;
+  width: 32px;
+  height: 21px;
+  left: 24px;
+  top: 608px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #323232;
+}
+
+.h1-7 {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
@@ -31,54 +176,142 @@ a, b {
   line-height: 18px;
 }
 
-.card {
-  border-radius: 15.5px;
-  box-sizing: border-box;
- }
-
- .card-sm {
-  border-color: #969696;
-  color: #969696;
-  border-radius: 25px;
- }
-
- .main-card {
-  border: none;
- }
-
- .greetings2 {
-  font-size: 24px;
-  line-height: 31.25px;
-  font-family: 'DM Sans', sans-serif;
+.h1-8 {
+  position: absolute;
+  width: 247px;
+  height: 16px;
+  left: 104px;
+  top: 742px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
-.card-title {
-  font-size: 16px;
-  font-family: 'DM Sans', sans-serif;
-  line-height: 16px;
- }
+.img1 img{
+  position: absolute;
+  height: 240px;
+  left: 68px;
+  right: 68px;
+  top: 40px;
+}
 
- .small-title {
+.p-1 {
+  position: absolute;
+  width: 327px;
+  height: 96px;
+  left: 24px;
+  top: 490px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
-  font-family: 'DM Sans', sans-serif;
-  line-height: 18.23px;
+  line-height: 24px;
   color: #969696;
- }
+}
 
- .foot {
-  background-color: #FFFFFF;
- }
+a {
+  color:#FF9F24;
+  text-decoration:none;
+}
 
- .foot-icon {
-  border-color:#FF9F24;
- }
+.row-1 {
+  position: absolute;
+  width: 342px;
+  height: 31px;
+  left: 26px;
+  top: 642px;
+}
 
- .brand-size {
+.brand-size {
   border-color:#969696;
   border-radius: 20px;
- }
+  width: 100px;
+  height: 31px;
+}
 
- .active {
+.active {
   border-color:#FF9F24;
   color: #FF9F24;
 }
+
+
+// .beers {
+//   height: 200px;
+// }
+
+// .detail {
+//   font-family: 'DM Sans';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 18px;
+//   line-height: 23.44px;
+//   color: #323232;
+// }
+
+
+
+// .warning {
+//   background-color: #FF9F24;
+// }
+
+// // .btn-warning {
+// //   background-color: #FF9F24;
+// // }
+
+// .origin {
+//   font-family: 'DM Sans';
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 18px;
+// }
+
+// .card {
+//   border-radius: 15.5px;
+//   box-sizing: border-box;
+//  }
+
+//  .card-sm {
+//   border-color: #969696;
+//   color: #969696;
+//   border-radius: 25px;
+//  }
+
+//  .main-card {
+//   border: none;
+//  }
+
+//  .greetings2 {
+//   font-size: 24px;
+//   line-height: 31.25px;
+//   font-family: 'DM Sans', sans-serif;
+// }
+
+// .card-title {
+//   font-size: 16px;
+//   font-family: 'DM Sans', sans-serif;
+//   line-height: 16px;
+//  }
+
+//  .small-title {
+//   font-size: 14px;
+//   font-family: 'DM Sans', sans-serif;
+//   line-height: 18.23px;
+//   color: #969696;
+//  }
+
+//  .foot {
+//   background-color: #FFFFFF;
+//  }
+
+//  .foot-icon {
+//   border-color:#FF9F24;
+//  }
+
+
+
+

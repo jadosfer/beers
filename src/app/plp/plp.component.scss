@@ -1,8 +1,39 @@
-.rounded-circle {
-  height: 50px;
+.img1 img{
+  width: 47px;
+  position: absolute;
+  top: 40px;
+  left: 308px;
+}
+
+.img2 img{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 115px;
+  top: 317px;
+}
+
+.img3 img{
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 271px;
+  top: 316px;
+}
+
+.list {
+  position: absolute;
+  top: 40px;
+  left: 24px;
+  background-color:#FFFFFF;
+  color:#0F0D23;
+  border: none
 }
 
 .greetings {
+  position: absolute;
+  top: 104px;
+  left: 24px;
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   line-height: 20.83px;
@@ -10,48 +41,240 @@
 }
 
 .greetings-2 {
+  position: absolute;
+  top: 130px;
+  left: 24px;
   font-size: 24px;
-  line-height: 31.25px;
+  line-height: 31px;
   font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.card-search {
+  background-color: #ffffff;
+  position: absolute;
+  top: 185px;
+  left: 24px;
+  width: 327px;
+  height: 48px;
+  border-radius: 12px;
+  border: none;
+}
+
+.bi-search {
+  position: absolute;
+  top: 197px;
+  left: 40px;
+  color: #C4C4C4;
+}
+
+.my-input {
+  border: none;
+  position: absolute;
+  width: 218px;
+  height: 14px;
+  left: 71px;
+  top: 202px;
+}
+
+.my-input::placeholder {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #C4C4C4;
 }
 
 .category {
+  position: absolute;
+  width: 131px;
+  height: 23px;
+  left: 24px;
+  top: 265px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
   font-size: 18px;
-  line-height: 23.44px;
-  font-family: 'DM Sans', sans-serif;
+  line-height: 23px;
 }
 
-input::placeholder {
-  font-family: DM Sans;
+.see-all {
+  position: absolute;
+  width: 44px;
+  height: 14px;
+  left: 307px;
+  top: 271px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.btn-warning {
-  background-color: #FF9F24;
+  line-height: 14px;
+  color: #646464;
+  opacity: 0.6;
 }
 
-.btn {
-  border-radius: 10px;
+.see-all2 {
+  position: absolute;
+  width: 44px;
+  height: 14px;
+  left: 307px;
+  top: 393px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #646464;
+  opacity: 0.6;
+}
+
+.card-1 {
+  position: absolute;
+  width: 58px;
+  height: 48px;
+  left: 24px;
+  top: 304px;
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+
+.card-2 {
+  position: absolute;
+  width: 138px;
+  height: 48px;
+  left: 98px;
+  top: 304px;
+  background: #FF9F24;
+  border-radius: 12px;
+}
+
+.card-3 {
+  position: absolute;
+  width: 106px;
+  height: 48px;
+  left: 254px;
+  top: 304px;
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+
+.card-4 {
+  //position: absolute;
+  position: relative;
+  width: 155px;
+  height: 195px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  border: none;
+}
+
+.card-button {
+  position: absolute;
+  bottom: 0px; /* Distancia desde la parte inferior de la tarjeta */
+  right: 0px; /* Distancia desde la parte derecha de la tarjeta */
+  padding: 5px 10px 10px 10px; /* Añade un espacio alrededor del botón */
+  background-color:#FF9F24;
+  border-radius: 10px 0 10px 0;
+  border: none;
+  color:#FFFFFF;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.card-foot {
+  position: absolute;
+  bottom: 8px;
+  left: 14px;
+  font-size: 12px;
+  width: 51px;
+  height: 16px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #323232;
+}
+
+.row-1 {
+  position: absolute;
+  width: 323px;
+  left: 24px;
+  top: 423px;
+}
+
+.all {
+  position: absolute;
+  width: 19px;
+  height: 16px;
+  left: 42px;
+  top: 320px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #323232;
+}
+
+.beer {
+  position: absolute;
+  width: 35px;
+  height: 16px;
+  left: 146px;
+  top: 320px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.wine {
+  position: absolute;
+  width: 39px;
+  height: 16px;
+  left: 302px;
+  top: 320px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #323232;
+}
+
+.popu {
+  position: absolute;
+  width: 67px;
+  height: 23px;
+  left: 24px;
+  top: 384px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #323232;
+}
+
+.card-title-1 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #323232;
 }
 
 .beers {
-  width: 80px;
+  height: 122px;
 }
 
-.card {
-  border-radius: 20px;
-  border:none;
- }
-
- .card-title {
-  font-size: 16px;
-  font-family: 'DM Sans', sans-serif;
-  line-height: 16px;
-  font-weight: 500;
- }
-
- a {
-  text-decoration:none;
-  color: #323232;
- }
+a {
+text-decoration:none;
+}
