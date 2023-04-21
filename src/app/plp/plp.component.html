@@ -59,7 +59,7 @@
         </a>
       </div>
       <button class="card-button">+</button>
-      <div class="card-foot">${{+product.price/100}}</div>
+      <div *ngIf="product.priceToShow" class="card-foot">${{product.priceToShow}}</div>
     </div>
   </div>
 </div>

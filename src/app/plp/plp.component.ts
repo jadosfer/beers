@@ -19,7 +19,7 @@ export class PlpComponent implements OnInit {
     this.productsList = products;
     this.productsList.forEach(product => {
       this.stockPriceService.getStockPrice(product.skus[0].code).subscribe((prod: Product) => {
-        product.price = prod.price;
+        product.priceToShow = + prod.price/100;
       });
     });
   }

@@ -1,20 +1,23 @@
+$secondary-color: #323232;
+$white-color: #FFFFFF;
+
 .bi-arrow-left {
   position: absolute;
   left: 33px;
   top: 41px;
-  color: #323232;
+  color: $secondary-color;
 }
 
 .bi-three-dots {
   position: absolute;
   left: 319px;
   top: 42px;
-  background: #FFFFFF;
+  background: $white-color;
 }
 
 .bi-bag-dash {
   position: absolute;
-  background: #FFFFFF;
+  background: $white-color;
   left: 41px;
   top: 732px;
 }
@@ -25,7 +28,7 @@
   height: 350px;
   left: -9px;
   top: 40px;
-  background: #ffffff;
+  background: $white-color;
   border-radius: 12px;
   border: none;
 }
@@ -36,7 +39,7 @@
   height: 40px;
   left: 24px;
   top: 40px;
-  background: #FFFFFF;
+  background: $white-color;
   border-radius: 12px;
   border: none;
 }
@@ -47,7 +50,7 @@
   height: 40px;
   left: 311px;
   top: 40px;
-  background: #FFFFFF;
+  background: $white-color;
   border-radius: 12px;
   border: none;
 }
@@ -58,7 +61,7 @@
   height: 801px;
   left: -9px;
   top: 334px;
-  background: #FFFFFF;
+  background: $white-color;
   border-radius: 48px 48px 0px 0px;
   border: none;
 }
@@ -95,7 +98,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
-  color: #323232;
+  color: $secondary-color;
 }
 
 .h1-2 {
@@ -151,7 +154,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-  color: #323232;
+  color: $secondary-color;
 }
 
 .h1-6 {
@@ -165,7 +168,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-  color: #323232;
+  color: $secondary-color;
 }
 
 .h1-7 {
@@ -188,7 +191,7 @@
   font-size: 16px;
   line-height: 16px;
   text-align: center;
-  color: #FFFFFF;
+  color: $white-color;
 }
 
 .img1 img{
@@ -237,81 +240,3 @@ a {
   border-color:#FF9F24;
   color: #FF9F24;
 }
-
-
-// .beers {
-//   height: 200px;
-// }
-
-// .detail {
-//   font-family: 'DM Sans';
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 18px;
-//   line-height: 23.44px;
-//   color: #323232;
-// }
-
-
-
-// .warning {
-//   background-color: #FF9F24;
-// }
-
-// // .btn-warning {
-// //   background-color: #FF9F24;
-// // }
-
-// .origin {
-//   font-family: 'DM Sans';
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 14px;
-//   line-height: 18px;
-// }
-
-// .card {
-//   border-radius: 15.5px;
-//   box-sizing: border-box;
-//  }
-
-//  .card-sm {
-//   border-color: #969696;
-//   color: #969696;
-//   border-radius: 25px;
-//  }
-
-//  .main-card {
-//   border: none;
-//  }
-
-//  .greetings2 {
-//   font-size: 24px;
-//   line-height: 31.25px;
-//   font-family: 'DM Sans', sans-serif;
-// }
-
-// .card-title {
-//   font-size: 16px;
-//   font-family: 'DM Sans', sans-serif;
-//   line-height: 16px;
-//  }
-
-//  .small-title {
-//   font-size: 14px;
-//   font-family: 'DM Sans', sans-serif;
-//   line-height: 18.23px;
-//   color: #969696;
-//  }
-
-//  .foot {
-//   background-color: #FFFFFF;
-//  }
-
-//  .foot-icon {
-//   border-color:#FF9F24;
-//  }
-
-
-
-

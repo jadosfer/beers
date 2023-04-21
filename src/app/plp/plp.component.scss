@@ -1,3 +1,8 @@
+$primary-color: #FF9F24;
+$secondary-color: #323232;
+$tertiary-color: #646464;
+$white-color: #FFFFFF;
+
 .img1 img{
   width: 47px;
   position: absolute;
@@ -25,7 +30,7 @@
   position: absolute;
   top: 40px;
   left: 24px;
-  background-color:#FFFFFF;
+  background-color: $white-color;
   color:#0F0D23;
   border: none
 }
@@ -52,7 +57,7 @@
 }
 
 .card-search {
-  background-color: #ffffff;
+  background-color: $white-color;
   position: absolute;
   top: 185px;
   left: 24px;
@@ -111,7 +116,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  color: #646464;
+  color:tertiary-color;
   opacity: 0.6;
 }
 
@@ -126,7 +131,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  color: #646464;
+  color: $tertiary-color;
   opacity: 0.6;
 }
 
@@ -136,7 +141,7 @@
   height: 48px;
   left: 24px;
   top: 304px;
-  background: #FFFFFF;
+  background: $white-color;
   border-radius: 12px;
 }
 
@@ -146,7 +151,7 @@
   height: 48px;
   left: 98px;
   top: 304px;
-  background: #FF9F24;
+  background: $primary-color;
   border-radius: 12px;
 }
 
@@ -156,7 +161,7 @@
   height: 48px;
   left: 254px;
   top: 304px;
-  background: #FFFFFF;
+  background: $white-color;
   border-radius: 12px;
 }
 
@@ -165,7 +170,7 @@
   position: relative;
   width: 155px;
   height: 195px;
-  background: #FFFFFF;
+  background: $white-color;
   border-radius: 12px;
   border: none;
 }
@@ -175,10 +180,10 @@
   bottom: 0px; /* Distancia desde la parte inferior de la tarjeta */
   right: 0px; /* Distancia desde la parte derecha de la tarjeta */
   padding: 5px 10px 10px 10px; /* Añade un espacio alrededor del botón */
-  background-color:#FF9F24;
+  background-color: $primary-color;
   border-radius: 10px 0 10px 0;
   border: none;
-  color:#FFFFFF;
+  color:$white-color;
   font-weight: 500;
   font-size: 24px;
   line-height: 24px;
@@ -196,7 +201,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
-  color: #323232;
+  color: $secondary-color;
 }
 
 .row-1 {
@@ -217,7 +222,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
-  color: #323232;
+  color: $secondary-color;
 }
 
 .beer {
@@ -231,7 +236,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: $white-color;
 }
 
 .wine {
@@ -245,7 +250,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
-  color: #323232;
+  color: $secondary-color;
 }
 
 .popu {
@@ -259,7 +264,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
-  color: #323232;
+  color: $secondary-color;
 }
 
 .card-title-1 {
@@ -268,7 +273,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
-  color: #323232;
+  color: $secondary-color;
 }
 
 .beers {
